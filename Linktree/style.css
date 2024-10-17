@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/william-warby-ld4wZGqlLF4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centra el texto y contenido inline-block */
+    min-height: 100vh; /* Usa el 100% de la altura de la ventana */
+    display: block;
+    margin: 0;
+}
+
+.container {
+    display: inline-block; /* Para centrar el contenido dentro del body */
+    margin-top: 40px;
+    text-align: center; /* Asegura que el contenido dentro del contenedor esté centrado */
+}
+
+.imagen_perfil {
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: beige;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: beige;
+    margin-bottom: 40px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.Centrado {
+    text-align: center;
+}
+
+.DatosRama {
+    list-style-type: none;
+    display: inline-block; /* Asegura que la lista esté alineada al centro */
+}
+
+.DatosRama a {
+    text-decoration: none;
+    color: white;
+    background-color: #dd9a33;
+    padding: 15px;
+    border-radius: 50px;
+    display: inline-block;
+    width: 450px; /* Ajusta el ancho del botón */
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.FotosCuerpo{
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 635px;
+    transform: translateY(30%);
+}
+
+.DatosRama a:hover {
+    background-color: #e5ab53;
+}
