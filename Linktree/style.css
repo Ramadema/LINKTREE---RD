@@ -9,16 +9,16 @@ body {
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
-    text-align: center; /* Centra el texto y contenido inline-block */
-    min-height: 100vh; /* Usa el 100% de la altura de la ventana */
+    text-align: center; 
+    min-height: 100vh; 
     display: block;
     margin: 0;
 }
 
 .container {
-    display: inline-block; /* Para centrar el contenido dentro del body */
+    display: inline-block; 
     margin-top: 40px;
-    text-align: center; /* Asegura que el contenido dentro del contenedor esté centrado */
+    text-align: center; 
 }
 
 .imagen_perfil {
@@ -30,37 +30,36 @@ body {
     transition: transform 0.8s ease-in-out;
 }
 
-/* Efecto de zoom en la imagen de perfil */
 .imagen_perfil:hover {
-    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    transform: scale(1.1); 
 
 }
 
 .titulo {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: beige;
+    color: #0f0f0e;
     margin-bottom: 20px;
 }
 
 .subtitulo {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: beige;
+    color: #0f0f0e;
     margin-bottom: 40px;
 }
 
 .social-icons {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .social-icons a {
     margin: 0 15px;
     transition: transform 0.8s ease-in-out; 
-    display: inline-block; /* Para que las imágenes dentro de los enlaces también se muevan */
+    display: inline-block; 
 }
 
-/* Efecto de movimiento en los enlaces de los íconos sociales */
+
 .social-icons a:hover {
-    transform: translateY(-10px); /* Mueve el enlace (y la imagen) hacia arriba */
+    transform: translateY(-10px); 
 }
 
 .social-icons img {
@@ -69,23 +68,46 @@ body {
 }
 
 .social-icons a:hover img {
-    transform: scale(1.1); /* Aumenta el tamaño de la imagen dentro del enlace */
+    transform: scale(1.1); 
 }
 
-.Centrado {
-    text-align: center;
+.boton-contenido {
+    color: white;
+    background-color: #d99412;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: block;
+    width: 450px; /* Ajusta el ancho del botón */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: background-color 0.8s ease-in-out, transform 0.8s ease-in-out;
+    position: relative; /* Para poder posicionar la imagen dentro del contenedor */
+    text-align: center; /* Centra el texto del enlace */
+    line-height: 45px; /* Alinea el texto verticalmente con la imagen */
 }
 
-.FotosCuerpo{
+.boton-contenido a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.boton-contenido:hover {
+    transform: translateX(10px); 
+    cursor: pointer;
+    background-color: bisque;
+}
+
+.FotosCuerpo {
     background-color: white;
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    margin-bottom: 20px;
     position: absolute;
-    left: 635px;
-    transform: translateY(30%);
-    transition: transform 0.8s ease-in-out, background-color 0.8s ease-in-out; /* Movimiento más fluido */
+    left: 20px; /* Ajusta la posición de la imagen a la izquierda del contenedor */
+    top: 50%;
+    transform: translateY(-50%); /* Centra la imagen verticalmente */
+    transition: transform 0.8s ease-in-out, background-color 0.8s ease-in-out;
 }
 
 
@@ -93,13 +115,11 @@ body {
     list-style-type: none;
     padding: 0;
     display: inline-block;
+    margin: 30px;
 }
 
-.DatosRama li {
-    margin: 10px 0;
-}
 
-.DatosRama a {
+/* .DatosRama a {
     text-decoration: none;
     color: white;
     background-color: #d99412;
@@ -110,11 +130,11 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
-    transition: transform 0.8s ease-in-out, background-color 0.8s ease-in-out; /* Movimiento más fluido */
+    transition: transform 0.8s ease-in-out, background-color 0.8s ease-in-out; 
 }
 
 .DatosRama a:hover {
     transform: translateX(10px);
     background-color: #e4b55c; 
 }
-
+ */
