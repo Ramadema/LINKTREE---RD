@@ -11,14 +11,15 @@ body {
     font-family: Arial, sans-serif;
     text-align: center; 
     min-height: 100vh; 
-    display: block;
-    margin: 0;
+    position: relative; /* Para que los elementos absolutos se alineen correctamente */
+    overflow: hidden; /* Para evitar el scroll debido a elementos posicionados */
 }
 
 .container {
     display: inline-block; 
     margin-top: 40px;
-    text-align: center; 
+    position: relative; /* Para que el contenido esté por encima de la niebla */
+    z-index: 4; /* Asegura que esté por encima de las nubes */
 }
 
 .imagen_perfil {
@@ -32,19 +33,21 @@ body {
 
 .imagen_perfil:hover {
     transform: scale(1.1); 
-
 }
 
 .titulo {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #0f0f0e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
 .subtitulo {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #0f0f0e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 .social-icons {
@@ -56,7 +59,6 @@ body {
     transition: transform 0.8s ease-in-out; 
     display: inline-block; 
 }
-
 
 .social-icons a:hover {
     transform: translateY(-10px); 
@@ -87,7 +89,7 @@ body {
     line-height: 45px; /* Alinea el texto verticalmente con la imagen */
 }
 
-.boton-contenido a{
+.boton-contenido a {
     text-decoration: none;
     color: aliceblue;
 }
@@ -110,31 +112,82 @@ body {
     transition: transform 0.8s ease-in-out, background-color 0.8s ease-in-out;
 }
 
-
 .DatosRama {
-    list-style-type: none;
     padding: 0;
-    display: inline-block;
     margin: 30px;
 }
 
-
-/* .DatosRama a {
-    text-decoration: none;
-    color: white;
-    background-color: #d99412;
-    padding: 15px 30px;
-    border-radius: 50px;
-    display: inline-block;
-    width: 450px;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
-    transition: transform 0.8s ease-in-out, background-color 0.8s ease-in-out; 
+/* Capa de niebla */
+.fog {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/nube.png"); /* Asegúrate de que la ruta sea correcta */
+    background-size: 50%; /* O un tamaño específico */
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    pointer-events: none;
+    animation: fogMove 40s ease-in-out infinite;
+    z-index: 2; /* Colocada sobre el fondo pero debajo del texto */
 }
 
-.DatosRama a:hover {
-    transform: translateX(10px);
-    background-color: #e4b55c; 
+/* Movimiento de la niebla */
+@keyframes fogMove {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
- */
+
+@keyframes fogMoveR {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Variaciones de la niebla para mayor realismo */
+.fog-layer-2 {
+    top: 30%;
+    background-image: url("images/nube.png"); 
+    opacity: 0.6; /* Ajuste de opacidad para hacer la nube más transparente */
+    filter: blur(8px); /* Desenfoque para suavizar las nubes */
+    animation: fogMove 60s ease-in-out infinite reverse;
+    z-index: 1; /* Colocada debajo de la niebla principal */
+}
+
+.fog-layer-3 {
+    top: 50%;
+    background-image: url("images/nube.png");
+    opacity: 0.6; /* Ajuste de opacidad para hacer la nube más transparente */
+    filter: blur(8px); /* Desenfoque para suavizar las nubes */
+    animation: fogMove 80s ease-in-out infinite;
+    z-index: 1; /* Colocada debajo de la niebla principal */
+}
+
+.fog-layer-4 {
+    top: 10%; /* Ajusta la posición vertical */
+    left: 50;
+    background-image: url("images/nube.png");
+    opacity: 0.4; /* Ajusta la opacidad */
+    filter: blur(6px); /* Ajusta el desenfoque */
+    animation: fogMove 50s ease-in-out infinite; /* Cambia la duración de la animación */
+    z-index: 1; /* Asegúrate de que esté debajo de otras capas si es necesario */
+}
+
+.fog-layer-5 {
+    top: 70%; /* Ajusta la posición vertical */
+    left: 0;
+    background-image: url("images/nube.png");
+    opacity: 0.7; /* Ajusta la opacidad */
+    filter: blur(10px); /* Ajusta el desenfoque */
+    animation: fogMoveR 40s ease-in-out infinite; /* Cambia la duración de la animación */
+    z-index: 1; /* Asegúrate de que esté debajo de otras capas si es necesario */
+}
