@@ -1,0 +1,92 @@
+body {
+    background-color: darkslategray;
+    margin: 0 auto; /* Centra el body horizontalmente */
+    padding: 20px; /* Espacio interior opcional */
+}
+
+.titulo{
+    color: black; 
+    font-style: italic;
+    padding: 15px;
+}
+
+#tituloTab {
+    margin-top: 30px;
+    font-size:larger ;
+    text-align: center;
+}
+
+.bigTitulo{
+    background-color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    text-align: center;
+}
+
+.texto{
+    color: black;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 120%;
+    margin: 20px;
+}
+
+#contenedor{
+    width: 1200px;
+    /* margin-left: 150px; */
+    margin: 0 auto;
+    /* display: inline-block; */
+}
+
+.menu{
+    background-color: #4099ec;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    /* line-height: 60px; */
+}
+
+.sidebar{
+    background-color: skyblue;
+    width: 260px;
+    /* width: 25%; */
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content{
+    background-color: #beded9;
+    width: calc(100% - 260px);
+    /* width: 75%; */
+    height: 726px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer {
+    text-align: center;
+    line-height: 0px;
+    background-color: #4099ec;
+    height: 60px;
+}
+
+#menu{
+    background-color: aqua; 
+    text-align: center;
+    font-size: 120%;
+    padding: 14px;
+    border-radius: 10px; /* Radio de las esquinas */
+    overflow: hidden; /* Evita que el contenido se desborde del borde redondeado */
+    display: inline-block; /*reduce el backgorund del del boton */
+    
+}
+
+.footer ul a {
+    display: block;
+    color: blue;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.footer ul a:hover {
+    transform: translateY(-5px);
+}

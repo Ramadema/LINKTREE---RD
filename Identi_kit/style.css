@@ -1,0 +1,118 @@
+a {
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    padding: 7px; /* Espaciado interno opcional */
+    border-radius: 4px; /* Bordes redondeados opcionales */
+    transition: border 0.1s ease; /* Transición suave para el contorno */
+}
+
+a:hover {
+    border: 2px solid #3498db; /* Contorno azul al pasar el mouse */
+    color: #3498db; /* Cambia el color del texto si lo deseas */
+}
+
+.no-border-hover {
+    border: none; /* Asegura que no haya borde aplicado por defecto */
+}
+
+.no-border-hover:hover {
+    border: none; /* No aplica el borde al pasar el mouse */
+    color: blanchedalmond; /* Mantiene el color original del texto */
+}
+
+body {
+    background-color: darkslategray;
+    width: 75%; 
+    margin: 0 auto; /* Centra el body horizontalmente */
+    padding: 20px; /* Espacio interior opcional */
+}
+
+#bodyPrincipal{
+    text-align: center;
+}
+
+.texto{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 120%;
+}
+
+.titulo{
+    color: beige; 
+    font-style: italic;
+}
+
+.numTabla{
+    background-color: gold; 
+    text-align: center; 
+    font-size: 60px
+}
+
+.bigTitulo{
+    background-color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    text-align: center;
+}
+
+.menu{
+    background-color: aqua; 
+    text-align: center;
+    font-size: 120%;
+    padding: 8px;
+    border-radius: 10px; /* Radio de las esquinas */
+    overflow: hidden; /* Evita que el contenido se desborde del borde redondeado */
+}
+
+#menu{
+    list-style-type: none;
+    text-align: center;
+    background-color: beige;
+    padding: 2px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.linkPags{
+    
+    vertical-align: middle;
+    text-align: center; /* Centra el contenido dentro de cada celda */
+    padding: 10px; /* Espaciado interno */
+}
+
+.numTier{
+    color: aliceblue;
+    text-align: center; 
+    font-size: xx-large; 
+}
+
+#jueguitosImagenees {
+    width: 400px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+}
+
+.ganaste{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    border-radius: 5PX;
+    background-color: green; 
+    color: white;
+    width: 800px;
+}
+
+.perdiste{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100px;
+    border-radius: 5PX; 
+    background-color: brown; 
+    color: white;
+    width: 800px;
+
+}
+
+.tablePrac{
+    margin: 0 auto; 
+    border-collapse: separate; 
+    border-spacing: 10px; 
+    border: 20px solid cadetblue; 
+    padding: 10px;
+}
