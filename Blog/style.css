@@ -45,6 +45,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
 }
+
 .article {
     flex: 1 1 calc(50% - 20px);
     background-color: white;
@@ -102,7 +103,6 @@ footer {
     }
 }
 
-
 .contact-container {
     max-width: 800px;
     margin: 20px auto;
@@ -111,9 +111,19 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 .contact-container h2 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.contact-containerHistoria {
+    max-width: 1500px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 button {
