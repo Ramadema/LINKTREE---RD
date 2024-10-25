@@ -25,7 +25,12 @@ nav {
 nav a {
     color: white;
     padding: 10px 15px;
-    text-decoration: none;
+    text-decoration: underline;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 nav a:hover {
     background-color: #555;
