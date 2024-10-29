@@ -12,8 +12,9 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 20px 10px;
     text-align: center;
+    font-size: 1.5em;
 }
 header h1 {
     margin-bottom: 10px;
@@ -21,6 +22,7 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 nav a {
     color: white;
@@ -46,6 +48,16 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
+.articlecenter {
+    flex: 1 1 calc(50% - 20px);
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
 .article {
     flex: 1 1 calc(50% - 20px);
     background-color: white;
@@ -69,8 +81,13 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: flex;
     align-items: center; 
-    justify-content: space-around; 
+    justify-content: space-around;
+}
 
+.articleImg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .sidebar {
@@ -87,6 +104,12 @@ nav a:hover {
 .sidebar p {
     margin-bottom: 10px;
 }
+
+.sidebar img {
+    display: block; 
+    margin: 0 auto; 
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -94,12 +117,20 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
-@media(max-width: 768px) {
+
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2em;
+        padding: 15px 5px;
+    }
     .article {
         flex: 1 1 100%;
     }
     .sidebar {
         flex: 1 1 100%;
+    }
+    .articleImg {
+        flex: 1 1 50%;
     }
 }
 
