@@ -10,7 +10,7 @@ body {
     padding: 10px;
 }
 header {
-    background-color: #333;
+    background-color: #d99412;
     color: white;
     padding: 20px 10px;
     text-align: center;
@@ -28,14 +28,14 @@ nav a {
     color: white;
     padding: 10px 15px;
     text-decoration: underline;
-    background-color: #333;
+    background-color: #d99412;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 nav a:hover {
-    background-color: #555;
+    background-color: #d8a545;
 }
 .main-container {
     display: flex;
@@ -49,6 +49,7 @@ nav a:hover {
 }
 
 .articlecenter {
+    
     flex: 1 1 calc(50% - 20px);
     background-color: white;
     margin: 10px;
@@ -56,6 +57,10 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
+}
+
+.articlecenter h2 {
+    color: #eea10f;
 }
 
 .article {
@@ -68,6 +73,7 @@ nav a:hover {
 }
 .article h2 {
     margin-bottom: 10px;
+    color: #eea10f;
 }
 .article p {
     margin-bottom: 10px;
@@ -91,6 +97,7 @@ nav a:hover {
 }
 
 .sidebar {
+    
     flex: 1;
     background-color: #f0f0f0;
     margin: 10px;
@@ -100,6 +107,7 @@ nav a:hover {
 }
 .sidebar h3 {
     margin-bottom: 10px;
+    color: #eea10f;
 }
 .sidebar p {
     margin-bottom: 10px;
@@ -111,7 +119,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #d99412;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -159,7 +167,7 @@ footer {
 
 button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #d99412;
     color: white;
     border: none;
     border-radius: 5px;
@@ -167,5 +175,5 @@ button {
     font-size: 16px;
 }
 button:hover {
-    background-color: #555;
+    background-color: #d8a545;
 }
