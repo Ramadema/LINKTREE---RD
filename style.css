@@ -92,6 +92,11 @@ body {
 .boton-contenido a {
     text-decoration: none;
     color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
 }
 
 .boton-contenido:hover {
